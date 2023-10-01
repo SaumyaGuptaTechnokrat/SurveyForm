@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: skyblue;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+input[type="text"],
+
+input[type="number"],
+input[type="email"],
+input[type="Date"] {
+    padding: 2vh;
+    width: 30%;
+    margin-top: 1vh;
+    border-radius: 2vh;
+    border: 1px skyblue solid;
+}
+
+input[type="checkbox"] {
+    padding: 2vh;
+    width: 10vh;
+    border: 1px skyblue solid;
+
+}
+
+select {
+    padding: 2vh;
+    width: 35%;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px skyblue solid;
+}
+
+label {
+    font-weight: bold;
+    width: 5%;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    width: 50%;
+    height: 30rem;
+    z-index: 3;
+    box-shadow: 3px 5px 20px black;
+    padding: 2vh;
+}
+
+.form-group {
+    margin-bottom: 20px;
+
+}
+
+.form-group input {
+    margin-right: 4vh;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 2vh;
+}
+
+#Female {
+    margin-right: 14vh !important;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    /* border: none; */
+    cursor: pointer;
+    width: 30vh;
+    border-radius: 15vh;
+    border: 1px skyblue solid;
+
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.error {
+    color: red;
+}
+
+.form-group-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-group-button .btn {
+    margin-right: 2vh;
+}
+/* .form-checkbox-profession{
+    margin-right: 2vh;
+    display: inline-flex;
+} */
+/* .form-checkbox{
+    display: inline-flex;
+    margin-right: 2vh;
+} */
+@media (max-width:768px) {
+    .card {
+        height: 55rem;
+    }
+
+    label {
+        display: block;
+        margin-top: 2vh;
+    }
+
+    input[type="text"],
+
+    input[type="number"],
+    input[type="email"],
+    input[type="Date"] {
+        padding: 2vh;
+        width: 40%;
+        margin-top: 1vh;
+        border-radius: 2vh;
+    }
+
+    input[type="checkbox"] {
+        padding: 2vh;
+        width: 10vh;
+
+    }
+
+    select {
+        padding: 2vh;
+        width: 50%;
+        margin-top: 5px;
+        border-radius: 10px;
+    }
+
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1>Customer Survey Form</h1>
+        <div class="card">
+            <div class="card-header"></div>
+            <div class="card-body">
+                <form id="surveyForm" ><!---->
+                    <div class="form-group">
+                        <label for="FirstName">First Name:</label>
+
+                        <input type="text" id="FirstName" placeholder="First Name" required />
+
+                        <label for="LastName">Last Name:</label>
+
+                        <input type="text" id="LastName" placeholder="Last Name" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="DOB" style="margin-right: 5.5vh;">DOB:</label>
+
+                        <input type="date" id="DOB" placeholder="Date of Birth" required />
+                        <label for="Country" style="margin-right: 2.5vh;">Country:</label>
+                        <select id="Country" required>
+                             <option>Select Country:</option>
+                        </select>
+                    </div>
+                    <div><br /></div>
+
+                    <div class="form-group form-checkbox-profession">
+                        
+                            <label for="Male">Male</label>
+                            <input type="checkbox" id="Male" />
+                            <label for="Female">Female</label>
+                            <input type="checkbox" id="Female" />
+
+                        <label id="labelProfession" for="Profession">Profession:</label>
+
+                        <input type="text" id="Profession" placeholder="Profession" required />
+                    </div>
+
+                    <div><br /></div>
+                    <div class="form-group" style="margin-bottom: 5vh;">
+
+                        <label for="Email" style="margin-right: 5vh;">Email:</label>
+                        <input type="email" id="Email" placeholder="Email" required />
+
+                        <label for="number" style="margin-right: 2vh;">Number:</label>
+
+                        <input type="number" id="number" placeholder="Number" required />
+                    </div>
+
+                    <div class="form-group form-group-button">
+
+                        <button type="submit" class="btn">Submit</button>
+                        <button type="button" class="btn" onclick="resetForm()">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2>Survey Submission</h2>
+            <div id="popup-results"></div>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
